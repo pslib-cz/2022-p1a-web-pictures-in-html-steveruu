@@ -51,6 +51,13 @@
     </section>
     <section>
         <h1>použití "srcset" u formátu .jpg</h1>
-        <img srcset="./images/small.jpg 480w, ./images/medium.jpg 960w, ./images/big.jpg 1920w" src="medium.jpg" sizes="100vw" alt="hrad">
+        <img srcset="./images/small.jpg 480w, ./images/medium.jpg 960w, ./images/big.jpg 1920w" src="medium.jpg" sizes="100vw" alt="hrad přes <srcset>">
     </section>
+    <section>
+        <h1>volba file formátu dle volby prohlížeče</h1>
+        <picture>
+            <source srcset="./images/Kasteel_de_Haar_75.9.avif" type="image/avif">
+            <source srcset="./images/Kasteel_de_Haar_76.8.webp" type="image/webp">
+            <img decoding="async" src="./images/small.jpg" loading="lazy" style="width: 70%; height: 70%;" alt="hrad přes <picture> a <srcset>">
+        </picture>
 </html>
