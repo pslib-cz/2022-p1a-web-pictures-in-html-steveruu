@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <title>Obrázky v HTML dokumentu</title>
 </head>
 <body>
@@ -11,10 +12,45 @@
         <h1>Vkládání obrázku do stránky</h1>
     </header>
     <section>
-        <h2>Originál</h2>
+        <h2>original jpg</h2>
         <div>
-            <img src="./images/Kasteel_de_Haar.jpg" alt="Originální verze obrázku" />
+            <figure>
+                <img src="./images/Kasteel_de_Haar.jpg" alt="Originální verze obrázku">
+                <figcaption>
+                    Originální verze obrázku - kvalita 100%; effort 4
+                </figcaption>
+            </figure>
+        </div>
+        <h2>webp - 76,8kB</h2>
+        <div>
+            <figure>
+                <img src="./images/Kasteel_de_Haar_76.8.webp" alt="webp verze obrázku">
+                <figcaption>
+                    kompresovaná verze obrázku - formát WebP - kvalita 45,6%; effort 4; 76,8kB
+                </figcaption>
+            </figure>
+        </div>
+        <h2>avif - 75,9kB</h2>
+        <div>
+            <figure>
+                <img src="./images/Kasteel_de_Haar_75.9.avif" alt="avif verze obrázku">
+                <figcaption>
+                    kompresovaná verze obrázku - formát AVIF - kvalita 29%; effort 4; 75,9kB
+                </figcaption>
+            </figure>
+        </div>
+        <h2>jpg - 77,7kB</h2>
+        <div>
+            <figure>
+                <img src="./images/Kasteel_de_Haar_77.7.jpg" alt="jpg verze obrázku">
+                <figcaption>
+                    kompresovaná verze obrázku - formát JPG - kvalita 0,44; 77,7kB
+                </figcaption>
+            </figure>
         </div>
     </section>
-</body>
+    <section>
+        <h1>použití "srcset"</h1>
+        <img srcset="s" 
+    </section>
 </html>
